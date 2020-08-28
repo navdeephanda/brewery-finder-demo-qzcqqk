@@ -1,0 +1,5 @@
+
+<app-brewery-list-item *ngFor="let brewery of favorites$ | async"
+  [brewery]="brewery"
+  [favorited] = "brewery.favorited">
+</app-brewery-list-item>
